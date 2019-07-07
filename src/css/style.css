@@ -1,0 +1,135 @@
+html {
+    width: 350px;
+    height: 400px;
+   
+}
+
+* {
+    margin: 0px;
+
+    font-family: 'Muli', sans-serif;
+}
+h1{
+    color: #384B60;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 18px;
+}
+.btn {
+    border: 0 none;
+    background-color: #FF7677;
+    text-decoration: none;
+    border-radius: 6px;
+    
+}
+
+.btn-primary {
+    background-color: #FF7677;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: rgb(255, 118, 119);
+ 
+}
+
+.container {
+    border-style: solid;
+    border-radius: 8px;
+    border-color: #707070;
+    border-width: 1px;
+    width: 90%;
+    height: 70px;
+    left: 50%;
+    transform: translate(-50%);
+    position: relative;
+    
+    margin-top: 15px;
+  
+}
+
+.container p {
+    margin: 20px;
+}
+
+#convert {
+    color: white;
+    font-size: 30px;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 7%;
+    width: 90%;
+    height: 65px;
+}
+
+#outer{
+    position: absolute;
+    top: 27%;
+    width: 100%;
+}
+.input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+    color: gray;
+    box-sizing: border-box;
+  
+    font-size: 30px;
+    height: 50px;
+   left:50%;
+   transform: translate(-50%);
+    padding: 10px 0px;
+    position: absolute;
+    margin-top: 2px;
+ 
+    width: 90%;
+  
+ 
+  
+  
+    
+}
+.input:focus{
+    outline: none;  
+    border-bottom: 2px solid #FF7677;
+    color: #FF7677;
+}
+#swapcurrency{
+    position: absolute;
+    margin-top: 11px;
+    right: 10%;
+}
+
+.dropdownarrow{
+    position: absolute;
+    top:50%;
+    right: 5%;
+    transform: translate(-50%,-50%);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+
+.myClass {
+    height: 500px;
+}
+
+#converted{
+   justify-content: center;
+    position: absolute;
+    width: 100%;
+    left: 25%;
+    bottom: 22%;
+    color: #FF7677;
+    font-size: 29px;
+    display: none;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+ 
+
+</head>
+<body>
+     
+    <h1>Betrag</h1>
+    <div>
+          <input class="input" type="number" value="100">
+          <img id="swapcurrency" src="src/assets/ic_compare_arrows_24px.png" alt="">
+    </div>
+  
+   
+        <div id="outer">
+       <!-- <div class="container" id="pair1">
+            
+            <img class="dropdownarrow" src="src/assets/Polygon 1.png" alt="">
+            <p>Btc / Bitcoin</p>
+            <img src="" alt="">
+        </div>
+        <div class="container" id="pair2">
+            <img class="dropdownarrow"  src="src/assets/Polygon 1.png" alt="">
+            <p>Eth / Ethereum</p>
+        </div> -->
+
+        <div id="list">
+            <select v-model="selected" class="container">
+                    <option disabled value="" >Please select one</option>
+                    <option>Euro</option>
+                    <option>Dollar</option>
+                    <option>Pound</option>
+                
+                    <option>Bitcoin</option>
+                <option>Ethereum</option>
+                <option>Litecoin</option>
+              </select>
+              </select>
+            
+            <select v-model="selected" class="container"    >
+                <option disabled value="" >Please select one</option>
+                <option>Euro</option>
+                <option>Dollar</option>
+                <option>Pound</option>
+            
+                <option>Bitcoin</option>
+            <option>Ethereum</option>
+            <option>Litecoin</option>
+              </select>
+    </div>  
+    </div>
+    <p id="converted">100 € = 100$</p>
+
+
+    <button type="button" id="convert"  class="btn btn-primary">Convert</button>
+    <script src="src/js/popout.js"></script>
+	<script src="src/js/eventPage.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+  
+  
+
+
+        var example1 = new Vue({
+        el: '#list',
+        data: {
+            
+            cryptos:[
+                {crypto: 'bitcoin'},
+                {crypto: 'ethereum'}
+
+            ]
+             
+        }
+        })
+        
+    </script>
+</body>
+</html>

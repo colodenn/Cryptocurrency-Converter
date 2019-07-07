@@ -1,0 +1,45 @@
+  {
+    "name": "Cryptocurrency converter",
+    "description": "Cryptocurrency converter",
+    "version": "1.1",
+    "author": "Cornelius Denninger",
+    "manifest_version": 2,
+    "homepage_url": "https://codenn.de/",
+    "short_name": "Wumpus Send",
+    "icons": {
+      "128": "src/assets/custom – 1.png"
+    },
+   
+    "browser_action": {
+      "default_popup": "/hello.html",
+
+      "default_icon": "src/assets/custom – 1.png"
+    },
+
+  
+
+    "permissions": [
+      "contextMenus",
+      "storage",
+      "declarativeContent",
+      "activeTab",
+      "background"
+    ],
+
+    "background": {
+      "scripts": ["src/js/eventPage.js"],
+      "persistent": true
+    },
+
+
+    "commands": {
+      "_execute_browser_action": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+F",
+          "mac": "MacCtrl+Shift+F"
+        },
+        "description": "Currency converter"
+      }
+    }
+
+  }
